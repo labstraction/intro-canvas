@@ -17,7 +17,9 @@ function setUp() {
 
         rect.speedX = (Math.random() * 4) - 2; 
         rect.speedY = (Math.random() * 4) - 2; 
-
+        rect.red = Math.random() * 255;
+        rect.green = Math.random() * 255;
+        rect.blue = Math.random() * 255;
         entities.push(rect);
     }
     
@@ -30,6 +32,8 @@ function update() {7
         const rect = entities[i];
         rect.originX += rect.speedX;
         rect.originY += rect.speedY;
+        rect.speedX = (Math.random() * 4) - 2; 
+        rect.speedY = (Math.random() * 4) - 2;  
     }
 
 }
@@ -37,7 +41,7 @@ function update() {7
 function draw() {
     for (let i = 0; i < entities.length; i++) {
         const rect = entities[i];
-        
+        ctx.fillStyle = `rgb(${rect.red}, ${rect.green}, ${rect.blue})`
         ctx.fillRect(rect.originX, rect.originY, rect.width, rect.height);
     }
 }  
