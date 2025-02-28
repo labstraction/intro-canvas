@@ -32,23 +32,23 @@ const ctx = canvas.getContext('2d');
 //     ctx.fillRect(originX, originY, width, height);
 // }
 
-setInterval(() => {
-    ctx.fillStyle = `rgba(255, 255, 255, 0.05)`
-    ctx.fillRect(0,0,600,600);
+// setInterval(() => {
+//     ctx.fillStyle = `rgba(255, 255, 255, 0.05)`
+//     ctx.fillRect(0,0,600,600);
 
-    const width = Math.random() * 200;
-    const height = Math.random() * 200;
+//     const width = Math.random() * 200;
+//     const height = Math.random() * 200;
 
-    const originX = Math.random() * (600 - width);
-    const originY = Math.random() * (600 - height);
+//     const originX = Math.random() * (600 - width);
+//     const originY = Math.random() * (600 - height);
     
 
-    const red = Math.random() * 255;
-    const green = Math.random() * 255;
-    const blue = Math.random() * 255;
-    const alpha = Math.random();
+//     const red = Math.random() * 255;
+//     const green = Math.random() * 255;
+//     const blue = Math.random() * 255;
+//     const alpha = Math.random();
     
-    ctx.fillStyle = `rgba(${red}, ${green}, ${blue}, ${alpha})`
-    ctx.fillRect(originX, originY, width, height);
+//     ctx.fillStyle = `rgba(${red}, ${green}, ${blue}, ${alpha})`
+//     ctx.fillRect(originX, originY, width, height);
     
-}, 10);
+// }, 10);
